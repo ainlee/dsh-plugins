@@ -1,40 +1,15 @@
-# dsh-plugins
+# DSH Plugins (Archived Monorepo)
 
-Ain 的 DeepSeek Harness 插件 monorepo。每個插件放在 `packages/<name>/`，各自是可安裝的 DSH bundle。
+> **已遷移：本 repo 不再新增插件。**  
+> DSH 插件已改為「一插件一 repo」架構，避免單一插件問題牽連其他插件。
 
-## 結構
+## 現行位置
 
-```text
-packages/
-  example-hello/        # 最小範例 bundle（可刪除或改名）
-```
+- 市集索引：<https://github.com/ainlee/dsh-plugin-index> (https://ainlee.github.io/dsh-plugin-index/index.json)
+- @ainlee/dsh-zh-hant-full：<https://github.com/ainlee/dsh-zh-hant-full>
+- @ainlee/dsh-example-hello：<https://github.com/ainlee/dsh-example-hello>
 
-## 新增插件
+## 保留原因
 
-1. 複製 `packages/example-hello/` 成新的 package 目錄。
-2. 修改 `package.json`（`name`、`version`、`description`、exports）。
-3. 修改 `cordis.patch.yml` 的 `id` 與 `name`。
-4. 修改 `index.js` 的 `apply()` 實作。
-5. 更新 `locale/*.json` 的 `meta.title/description`。
-6. 確認 icon 與 `files` 清單完整。
-
-## 發佈到索引
-
-這個 repo 的插件可由獨立的索引 repo（例如 `ainlee/dsh-plugin-index`）透過 `git` source 引用：
-
-```json
-{
-  "type": "git",
-  "url": "https://github.com/ainlee/dsh-plugins",
-  "commit": "<40-char-lowercase-hex-commit-sha>",
-  "path": "packages/<name>"
-}
-```
-
-注意：DSH format 1 的 git commit 必須是 **40 位小寫 hex SHA**，不能使用 branch 或 tag。
-
-## 注意事項
-
-- 安裝/啟用插件會影響整個 DSH profile。
-- 請勿在 plugin 程式碼中硬編碼憑證或敏感資料。
-- 發布前檢查 `engines.dsh`、bundle manifest、locale/icon、授權與說明。
+本 repo 保留是因為舊版 index/快取/已安裝環境可能仍引用此處的 git commit。**請勿刪除歷史 commit。**  
+在確認無引用風險且經艾因哥哥明確許可後，才可 Archive 或排程刪除。
