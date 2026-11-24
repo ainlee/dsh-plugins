@@ -1,0 +1,17 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="zh-hant-full-switch-grad" x1="7" y1="7" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <!-- 後層 zh：低飽和的兩列圓角條塊（模擬文字） -->
+  <rect x="7" y="9" width="17" height="3.6" rx="1.8" fill="#8A97AB"/>
+  <rect x="7" y="14.4" width="12" height="3.6" rx="1.8" fill="#8A97AB"/>
+  <!-- 前層 zh-Hant：套用漸層的兩列圓角條塊（模擬文字） -->
+  <rect x="10" y="19.4" width="17" height="3.6" rx="1.8" fill="url(#zh-hant-full-switch-grad)"/>
+  <rect x="10" y="24.8" width="12" height="3.6" rx="1.8" fill="url(#zh-hant-full-switch-grad)"/>
+  <!-- 帶箭頭的切換弧線：由後層彎向前層 -->
+  <path d="M 21 7.5 C 27.5 7.5, 29 13, 26.5 18" stroke="url(#zh-hant-full-switch-grad)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M 29 16.6 L 26.5 18 L 26.2 14.9" stroke="url(#zh-hant-full-switch-grad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

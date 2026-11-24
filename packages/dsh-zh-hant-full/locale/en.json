@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Traditional Chinese (Taiwan) language pack",
+    "description": "4,326 Traditional Chinese (Taiwan) strings across 74 namespaces. Choose 繁體中文 under Settings → General → Language to switch the interface (page language becomes zh-Hant). Replaces dsh-zh-hant@0.1.1 and keeps your existing preference, so no immediate re-selection is needed. When disabled, the UI falls back to zh → en; strings not yet included follow the same order and may still appear in Simplified Chinese."
+  }
+}
