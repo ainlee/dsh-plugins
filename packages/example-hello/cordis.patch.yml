@@ -1,0 +1,4 @@
+- insert:
+    - id: ainlee-example-hello
+      name: '@ainlee/dsh-example-hello'
+      config: {}
